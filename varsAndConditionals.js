@@ -26,3 +26,51 @@ console.log ("Jon Snow is dead.")
     jonSnowHealth = jonSnowHealth - (jamieLannisterAttack - jonSnowDefense)
     console.log(jonSnowHealth)
 }
+
+if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
+    console.log ("Jon Snow has been slain.")
+} else {
+    jonSnowHealth -= (jamieLannisterAttack -jonSnowDefense)
+    console.log (`Jon Snow's health is down to ${jonSnowHealth}`)
+}
+if ((jonSnowHealth + 50) >= 100) {
+    jonSnowHealth = 100
+} else {
+    jonSnowHealth += 50
+}
+
+var coinLandsHeads = false
+
+if (coinLandsHeads === true) {
+    console.log ("The fight continues.")
+} else {
+    console.log ("Jon is allowed to run away.")
+}
+
+if (coinLandsHeads !== false) {
+    console.log ("The fight continues.")
+} else {
+    console.log ("Jon is allowed to run away.")
+}
+
+// for (let i = 0; i < 5; i++) {
+//     jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
+//     console.log (`Jon Snow's health is ${jonSnowHealth}`)
+// }
+
+// for (let i = 0; i < 5; i ++) {
+//     if (jonSnowHealth >= 0) {
+//         console.log ("Jon Snow has been slain.")
+//     } else {
+//         jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
+//         console.log (`Jon Snow's health is ${jonSnowHealth}`)
+//     }
+// }
+
+while (jonSnowHealth > 0) {
+jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
+console.log (`Jon Snow's health is ${jonSnowHealth}`)
+if (jonSnowHealth <=0) {
+    console.log ("Jon Snow is slain.")
+}
+}
